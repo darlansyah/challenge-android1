@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainRegister"
+        android:padding="20dp"
+        android:background="#ff663366">
+
+    <EditText android:id="@+id/text_fullName"
+              android:hint="Full Name"
+              android:background="#fff"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="8dp"
+              app:layout_constraintTop_toTopOf="parent"
+              android:textSize="20dp"
+              android:padding="5dp"/>
+
+    <EditText android:id="@+id/text_email"
+              android:hint="Email Address"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="12dp"
+              android:background="#fff"
+              android:textSize="20dp"
+              android:padding="5dp"
+              app:layout_constraintTop_toBottomOf="@+id/text_fullName"/>
+
+    <EditText android:id="@+id/text_university"
+              android:hint="University/Organization"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="12dp"
+              android:background="#fff"
+              android:textSize="20dp"
+              android:padding="5dp"
+              app:layout_constraintTop_toBottomOf="@+id/text_email"/>
+
+
+    <EditText android:id="@+id/text_pass1"
+              android:hint="Password"
+              android:inputType="textPassword"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="12dp"
+              android:background="#fff"
+              android:textSize="20dp"
+              android:padding="5dp"
+              app:layout_constraintTop_toBottomOf="@+id/text_university"/>
+
+    <EditText android:id="@+id/text_pass2"
+              android:inputType="textPassword"
+              android:hint="Confir Password"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="12dp"
+              android:background="#fff"
+              android:textSize="20dp"
+              android:padding="5dp"
+              app:layout_constraintTop_toBottomOf="@+id/text_pass1"/>
+
+    <Button android:id="@+id/botton_add_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/text_pass2"/>
+
+</android.support.constraint.ConstraintLayout>
